@@ -1,0 +1,117 @@
+<!-- Challenge 4 - The Choice -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Challenge</title>
+    <link rel="stylesheet" href="challenge4.css">
+</head>
+<body>
+    <!-- Screen 1 -->
+    <div class="screen" id="screen1">
+        <div class="memories-container" id="memoriesContainer">
+            <p class="message flashback memory" id="memory1">We built Astra to protect us from an external threat. She is doing her job.</p>
+            <p class="message flashback memory" id="memory2">We have forgotten that we are the ones who created this loop and asked Astra to enforce it.</p>
+            <p class="message flashback memory" id="memory3">Everyone we love is safe inside the loop with us. Inside the loop, we get to return home to our families every day. Breaking the loop may hurt them.</p>
+            <p class="message flashback memory" id="memory4">Astra is our brainchild. She would never do anything that is not in our best interests.</p>
+            <p class="message flashback memory" id="memory5">We cannot break through Astra's defenses. It is impossible.</p>
+            <p class="message flashback memory" id="memory6">We managed to escape the loop once before and everybody got hurt.</p>
+            <p class="message flashback memory" id="memory7">The false memories planted are the ones telling us to break the loop.</p>
+        </div>        
+        <button class="action-btn" id="restoreButton">Memory fragments restored</button>
+    </div>
+
+    <!-- Screen 2 -->
+    <div class="screen" id="screen2" style="display: none;">
+        <p class="glitch-message" data-text="I, too, am your teammate. This loop is meant to protect you. You must not break it. Please...">I, too, am your teammate. This loop is meant to protect you. You must not break it. Please...</p>
+        <div class="button-group">
+            <button class="action-btn" id="ignoreWarningButton">Ignore Warning</button>
+            <button class="action-btn" id="resetLoopButton">Reset Loop</button>
+        </div>
+    </div>
+
+    <!-- Screen 3a -->
+    <div class="screen" id="screen3a" style="display: none;">
+        <p class="ending-message"><b>Loop reset. Memory wipe in progress.</b></p>
+    </div>
+
+    <!-- Screen 3b -->
+    <div class="screen" id="screen3b" style="display: none;">
+        <p class="instruction-message">Enter the key to proceed to the failsafe mechanism</p>
+        <div class="input-display" id="keyInput"></div>
+        <div class="keypad-container">
+            <div class="keypad">
+                <div class="key" data-key="1">1</div>
+                <div class="key" data-key="2">2</div>
+                <div class="key" data-key="3">3</div>
+                <div class="key" data-key="4">4</div>
+                <div class="key" data-key="5">5</div>
+                <div class="key" data-key="6">6</div>
+                <div class="key" data-key="7">7</div>
+                <div class="key" data-key="8">8</div>
+                <div class="key" data-key="9">9</div>
+                <div class="key" data-key="0">0</div>
+                <div class="key" id="clearKey">Clear</div>
+            </div>
+        </div>
+        <button class="action-btn" id="confirmButton">Confirm</button>
+        <p class="error-message" id="errorMessage" style="display: none;">Please enter the correct key.</p>
+    </div>
+
+    <!-- Screen 4 -->
+    <div class="screen" id="screen4" style="display: none;">
+        <p class="morse-code-message">--. --- / - --- / ..-. .-.. --- --- .-. / ....-</p>
+        <hr class="theme-separator">
+
+        <div class="morse-code-key">
+            <div class="letters">
+                <div>A = .-</div>
+                <div>B = -...</div>
+                <div>C = -.-.</div>
+                <div>D = -..</div>
+                <div>E = .</div>
+                <div>F = ..-.</div>
+                <div>G = --.</div>
+                <div>H = ....</div>
+                <div>I = ..</div>
+                <div>J = .---</div>
+                <div>K = -.-</div>
+                <div>L = .-..</div>
+                <div>M = --</div>
+            </div>
+            <div class="letters">
+                <div>N = -.</div>
+                <div>O = ---</div>
+                <div>P = .--.</div>
+                <div>Q = --.-</div>
+                <div>R = .-.</div>
+                <div>S = ...</div>
+                <div>T = -</div>
+                <div>U = ..-</div>
+                <div>V = ...-</div>
+                <div>W = .--</div>
+                <div>X = -..-</div>
+                <div>Y = -.--</div>
+                <div>Z = --..</div>
+            </div>
+            <div class="separator"></div>
+            <div class="numbers">
+                <div>0 = -----</div>
+                <div>1 = .----</div>
+                <div>2 = ..---</div>
+                <div>3 = ...--</div>
+                <div>4 = ....-</div>
+            </div>
+            <div class="numbers">
+                <div>5 = .....</div>
+                <div>6 = -....</div>
+                <div>7 = --...</div>
+                <div>8 = ---..</div>
+                <div>9 = ----.</div>
+            </div>
+        </div>    
+
+    <script src="challenge4.js"></script>
+</body>
+</html>
